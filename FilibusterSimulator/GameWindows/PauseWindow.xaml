@@ -1,0 +1,24 @@
+﻿<Window x:Class="FilibusterSimulator.GameWindows.PauseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilibusterSimulator.GameWindows"
+        mc:Ignorable="d"
+        Title="PauseWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnReturnToGame" Content="Вернуться в игру" Height="50" Margin="250, 10" Grid.Row="0" Click="BtnReturnToGame_Click" />
+        <Button x:Name="btnRestartGame" Content="Начать заново" Height="50" Margin="250, 10" Grid.Row="1" Click="BtnRestartGame_Click" />
+        <Button x:Name="btnSaveGame" Content="Сохранить игру" Height="50" Margin="250, 10" Grid.Row="2" Click="BtnSaveGame_Click" />
+        <Button x:Name="btnLoadGame" Content="Загрузить игру" Height="50" Margin="250, 10" Grid.Row="3" Click="BtnLoadGame_Click" />
+        <Button x:Name="btnEndGame" Content="Выйти в главное меню" Height="50" Margin="250, 10" Grid.Row="4" Click="BtnEndGame_Click" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>

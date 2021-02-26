@@ -1,0 +1,32 @@
+﻿<Window x:Class="FilibusterSimulator.GameWindows.SaveWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilibusterSimulator.GameWindows"
+        mc:Ignorable="d"
+        Title="SaveWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel x:Name="save1StackPanel" Grid.Row="0">
+            <Button x:Name="btnSave1" Height="50" Margin="250, 10" Click="BtnSave_Click" />
+        </StackPanel>
+        <StackPanel x:Name="save2StackPanel" Grid.Row="1">
+            <Button x:Name="btnSave2" Height="50" Margin="250, 10" Click="BtnSave_Click" />
+        </StackPanel>
+        <StackPanel x:Name="save3StackPanel" Grid.Row="2">
+            <Button x:Name="btnSave3" Height="50" Margin="250, 10" Click="BtnSave_Click" />
+        </StackPanel>
+        <StackPanel x:Name="save4StackPanel" Grid.Row="3">
+            <Button x:Name="btnSave4" Height="50" Margin="250, 10" Click="BtnSave_Click" />
+        </StackPanel>
+        <Button x:Name="btnReturn" Content="Назад" Margin="300, 10" Grid.Row="4" Click="BtnReturn_Click" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
